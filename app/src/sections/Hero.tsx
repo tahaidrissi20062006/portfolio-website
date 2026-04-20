@@ -17,7 +17,7 @@ export default function Hero() {
           className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-panel mb-8"
         >
           <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
-          <span className="text-sm text-slate-300">Disponible pour des opportunités</span>
+          <span className="text-sm text-slate-300">Rabat-Salé-Kénitra</span>
         </motion.div>
 
         {/* Main Title */}
@@ -75,7 +75,7 @@ export default function Hero() {
             <Linkedin className="w-5 h-5" />
           </a>
           <a
-            href="mailto:contact@example.com"
+            href="mailto:jamalidrissitaha07@gmail.com"
             className="w-12 h-12 rounded-xl glass-panel flex items-center justify-center text-slate-400 hover:text-white hover:border-accent-cyan/50 transition-all duration-300 hover:glow-cyan"
           >
             <Mail className="w-5 h-5" />
