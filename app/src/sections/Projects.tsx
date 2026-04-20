@@ -9,6 +9,7 @@ const PROJECTS = [
       "Conception et développement d'une application desktop pour l'automatisation du suivi des entrées et sorties des véhicules. Interface graphique intuitive avec gestion en temps réel des places de parking.",
     technologies: ['C++', 'C++ Builder', 'SQL'],
     image: '/images/project-parking.jpg',
+    pdfLink: '/images/parking-project.pdf', // تأكد من تسمية الملف بهذا الاسم في المجلد
     icon: Layers,
     color: 'from-blue-500 to-cyan-500',
     gradientBg: 'from-blue-500/10 to-cyan-500/10',
@@ -20,6 +21,7 @@ const PROJECTS = [
       "Conception et développement d'une plateforme web dynamique pour la gestion automatisée des réservations d'espaces de travail, basée sur une architecture robuste en couches.",
     technologies: ['Visual Studio', 'Architecture MVC', 'C#', 'ASP.NET'],
     image: '/images/project-coworking.jpg',
+    pdfLink: '/images/coworking-project.pdf',
     icon: Globe,
     color: 'from-purple-500 to-pink-500',
     gradientBg: 'from-purple-500/10 to-pink-500/10',
@@ -31,6 +33,7 @@ const PROJECTS = [
       "Conception de topologies réseau complexes et simulation de protocoles. Mise en place d'infrastructures réseau virtuelles avec analyse de trafic et diagnostic.",
     technologies: ['Cisco Packet Tracer', 'Wireshark'],
     image: '/images/project-network.jpg',
+    pdfLink: '/images/network-project.pdf',
     icon: Network,
     color: 'from-emerald-500 to-teal-500',
     gradientBg: 'from-emerald-500/10 to-teal-500/10',
@@ -42,6 +45,7 @@ const PROJECTS = [
       "Ce portfolio interactif que vous explorez actuellement. Conception et développement d'une expérience web immersive avec effets 3D et animations fluides.",
     technologies: ['React', 'Three.js', 'Tailwind CSS', 'Framer Motion'],
     image: '/images/project-portfolio.jpg',
+    pdfLink: '#', // يمكنك وضع رابط CV هنا أو تركه فارغاً
     icon: Code2,
     color: 'from-orange-500 to-red-500',
     gradientBg: 'from-orange-500/10 to-red-500/10',
@@ -123,9 +127,6 @@ export default function Projects() {
                 >
                   <project.icon className="w-5 h-5 text-white" />
                 </div>
-
-                {/* Hover Overlay */}
-                <div className="absolute inset-0 bg-accent-cyan/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </div>
 
               {/* Content */}
@@ -150,10 +151,15 @@ export default function Projects() {
                 </div>
 
                 {/* View Button */}
-                <button className="inline-flex items-center gap-2 text-sm text-accent-cyan hover:text-white transition-colors group/btn">
+                <a 
+                  href={project.pdfLink}
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-sm text-accent-cyan hover:text-white transition-colors group/btn"
+                >
                   <span>Voir le projet</span>
                   <ExternalLink className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
-                </button>
+                </a>
               </div>
 
               {/* Glow Effect on Hover */}
