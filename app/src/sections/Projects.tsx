@@ -45,7 +45,7 @@ const PROJECTS = [
       "Ce portfolio interactif que vous explorez actuellement. Conception et développement d'une expérience web immersive avec effets 3D et animations fluides.",
     technologies: ['React', 'Three.js', 'Tailwind CSS', 'Framer Motion'],
     image: '/images/project-portfolio.jpg',
-    pdfLink: "cv-professionnel.pdf", // يمكنك وضع رابط CV هنا أو تركه فارغاً
+    pdfLink: "/images/cv-professionnel.pdf", // يمكنك وضع رابط CV هنا أو تركه فارغاً
     icon: Code2,
     color: 'from-orange-500 to-red-500',
     gradientBg: 'from-orange-500/10 to-red-500/10',
