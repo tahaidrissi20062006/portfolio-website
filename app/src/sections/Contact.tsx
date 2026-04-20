@@ -143,7 +143,7 @@ export default function Contact() {
               {/* CV Download */}
               <div className="mt-8 pt-6 border-t border-white/10">
                 <a
-                  href="#"
+                  href="/images/cv-professionnrl.pdf"
                   className="inline-flex items-center gap-3 px-6 py-3 rounded-xl bg-gradient-to-r from-accent-cyan to-accent-purple text-white font-medium hover:shadow-glow transition-all duration-300"
                 >
                   <FileText className="w-5 h-5" />
