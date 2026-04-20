@@ -102,10 +102,10 @@ export default function Contact() {
                   <div>
                     <div className="text-sm text-slate-500 mb-1">Email</div>
                     <a
-                      href="mailto:contact@example.com"
+                      href="mailto:jamalidrissitaha07@gmail.com"
                       className="text-white hover:text-accent-cyan transition-colors"
                     >
-                      contact@example.com
+                      jamalidrissitaha07@gmail.com
                     </a>
                   </div>
                 </div>
@@ -116,7 +116,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <div className="text-sm text-slate-500 mb-1">Localisation</div>
-                    <span className="text-white">Disponible partout</span>
+                    <span className="text-white">Rabat-Salé-Kénitra</span>
                   </div>
                 </div>
               </div>
